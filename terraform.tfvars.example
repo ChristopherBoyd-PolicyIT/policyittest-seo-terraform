@@ -1,0 +1,17 @@
+# Example Terraform Variables for PolicyIT SEO Page
+# Copy this file to terraform.tfvars and customize the values
+
+# AWS Configuration
+aws_region = "us-east-1"
+environment = "prod"
+
+# Domain Configuration
+domain_name = "policyit.com"
+website_bucket_name = "policyit-seo-website"
+
+# CloudFront Configuration
+cloudfront_price_class = "PriceClass_100"  # Use PriceClass_All for global distribution
+
+# Route53 Configuration
+# Set to true when ready to migrate DNS from Porkbun to AWS Route53
+enable_route53 = true
